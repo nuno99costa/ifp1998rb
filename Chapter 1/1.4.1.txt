@@ -1,0 +1,5 @@
+-- Exercises from Introduction to Functional Programming
+--1.4.1
+    To define the integral of f from a to b, we need the function (x -> y), the upper and lower limit (from the same type as x).
+    The answer is also a number. Therefore:
+        integral:: (Num a,b) => (a -> b) -> a -> a -> b 

@@ -1,0 +1,10 @@
+-- Exercise from Introduction to Functional Programming
+--2.2.1
+    (3 == - - 3) && True
+True
+    1 && 1 = 2
+Syntax error (&& requires a type of bool -> bool -> bool)
+    (1 < x && x < 100) || x = true || x = false
+Type error (x can't be a number and a boolean, it can only be 1 single type)
+    False == (1 < 3)
+False

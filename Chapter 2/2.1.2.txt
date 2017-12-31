@@ -1,0 +1,32 @@
+-- Exercise from Introduction to Functional Programming
+--2.1.2
+
+x = q * y + r AND 0 =< r < y
+x mod y = r => r = x - q * y
+x div y = q => q = (x - r) / y
+
+(x + y) mod z = (x mod z + y mod z) mod z
+
+x = q1 * z + r1
+y = q2 * z + r2
+
+x mod z = r1
+y mod z = r2
+
+(x + y)= z * (q1 + q2) + r1 + r2
+
+(x + y) mod z => 
+(z * (q1 + q2) + r1 +r2) mod z =>
+(r1 + r2) mod z
+
+(x mod z + y mod z) mod z =>
+(r1 + r2) mod z
+
+(r1 + r2) mod z == (r1 + r2) mod z
+
+--
+
+x * (y mod z) = (x * y) mod (x * z) =>
+x * (y mod z) = x * y - q * x * z =>
+x * (y mod z) = x (y - q * z) =>
+x * (y mod z) = x * (y mod z)

@@ -1,0 +1,8 @@
+-- Exercises from Introduction to Functional Programming
+--1.5.1
+    isSquare x = sqrt(x) = Integer and sqrt(x)*sqrt(x) = x
+
+    isSquare x = (square(intsqrt(x)) = x)
+	    sqrt(x) * sqrt(x) = square(sqrt(x))
+        Since intsqrt() returns the largest integer smaller or equal to the square root of its argument, sqrt x = Integer doesnt matter with this function. 
+        Therefore, if square(intsqrt(x)) = x, then we know that intsqrt() has returned the square root of the integer, which then satisfies the specification set in place.

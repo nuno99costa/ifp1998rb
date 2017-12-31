@@ -1,0 +1,7 @@
+-- Exercises from Introduction to Functional Programming
+--1.5.2
+        intsqrt(x) = sqrt(x) if sqrt(x) == Integer
+                  = floor(sqrt(x)) if sqrt(x) <> Integer
+    This can be sumarized with
+        intsqrt(x) = floor(sqrt(x))
+    Since if the square root of x is an integer, floor will do nothing to it.

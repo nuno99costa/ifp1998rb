@@ -1,0 +1,10 @@
+-- Exercises from Introduction to Functional Programming
+-- 1.2.2
+    three x = 3
+    
+    three (3+4)
+    3           (three)
+    
+    three(3+4)
+    three(7)    (+)
+    3           (three)

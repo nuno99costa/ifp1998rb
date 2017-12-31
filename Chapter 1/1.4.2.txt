@@ -1,0 +1,10 @@
+-- Exercises from Introduction to Functional Programming
+--1.4.2
+functionZero:: (num -> num) -> num
+    function that returns the value of 'x'
+
+functionPowerN:: num -> (num -> num)
+    function that returns a function thats a n power of x (n^x)
+
+functionInverse:: (num -> num) -> (num -> num)
+    function that returns a function that is the inverse of the input function

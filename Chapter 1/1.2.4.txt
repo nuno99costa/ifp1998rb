@@ -1,0 +1,27 @@
+-- Exercises from Introduction to Functional Programming
+--1.2.4
+    1??x => x1101
+    0??x => x00
+    
+    1110
+    01101
+    0100
+    000
+    
+    1110100
+    01001101
+    0110100
+    010000
+    00000
+    0000
+    000
+    
+    10100
+    001101
+    10100
+    001101
+    
+    This expression ('10100') creates a loop. Explained:
+    Since x is always equal to either '00' or '101', it happens that, when the 1st digit is '0', the 2nd is also '0' and the following digits are '1101' which results from the application of the 1st rule.
+    When the first digit is '1', which only occurs when x is '101', the following digits are '00', which results from the application of the 2nd rule.
+    Therefore, with the expression '10100', the x is always a binary of either '101' or '00',and since both rules can be only applied to one of each, the rules are applied endelessly.

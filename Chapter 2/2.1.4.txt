@@ -1,0 +1,5 @@
+-- Exercise from Introduction to Functional Programming
+--2.1.4
+
+(+(-x))
+Subtract x to a number

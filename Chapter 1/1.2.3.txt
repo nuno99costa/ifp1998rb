@@ -1,0 +1,33 @@
+-- Exercises from Introduction to Functional Programming
+--1.2.3
+    succ(pred(succ(pred(pred(zero))))
+    succ(pred(pred(zero)))                succ.1 or pred.1
+    pred(zero)                            succ.1
+        You can apply the rules in 2 ways
+            -use succ.1 on either the first or second case of itself on the expression, then use it again on the leftover case of itself, which results in pred(zero)
+            -use pred.1 on the only case of it, which results on an appeareance of a case of succ.1, in which case use succ.1 to simplify the expression to pred(zero)
+        Both result in the canonical form pred(zero) of the initial expression
+        
+    add((succ (pred zero)) zero)
+    add(zero zero)                  succ.1
+    zero                            add.1
+    
+    add((succ (pred zero)) zero)
+    succ(add(pred(zero) zero))      add.2
+    succ(pred(add(zero zero)))      add.3
+    add(zero zero)                  succ.1
+    zero                            add.1
+    
+        For any expression created, the reduction always terminates, this is because no syntatic rule created creates a loop with any other rule.
+        Using:
+        succ.1
+            | e, which cannot have an other syntatic rule applied
+        pred.1
+            | e, which cannot have an other syntatic rule applied
+        add.1
+            | e, which cannot have an other syntatic rule applied
+        add.2
+            | succ(add(e1 e2)), which, depending on the expression e1, cannot have another syntatic rule applied
+        add.3
+            | pred(add(e1 e2)), which, depending on the expression e1, cannot have another syntatic rule applied
+        As you can see, from any expression used for reduction, any application of a syntatic rule results in a finite amount of steps until a syntatic rule can no longer be applied

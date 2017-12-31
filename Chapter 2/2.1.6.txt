@@ -1,0 +1,6 @@
+-- Exercise from Introduction to Functional Programming
+--2.1.6
+
+(*) x = (* x) True (order doesnt matter in multiplication)
+(+) x = (+ x) True (order doesnt matter in addiction)
+(-) x = (- x) => x - ? != ? - x False (order matters in subtraction)

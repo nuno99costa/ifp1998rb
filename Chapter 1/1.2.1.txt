@@ -1,0 +1,13 @@
+-- Exercise from Introduction to Functional Programming
+--1.2.1
+    square(square(3+7))
+    square(square(9))   (+)
+    square(9 * 9)       (square)
+    square(81)          (*)
+    81 * 81             (square)
+    6561                (*)
+    
+    square(square(3+7))
+    (3+7)*(3+7)*(3+7)*(3+7) (square)
+    9 * 9 * 9 * 9           (+)
+    6561                    (*)

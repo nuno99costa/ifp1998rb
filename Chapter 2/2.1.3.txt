@@ -1,0 +1,40 @@
+-- Exercise from Introduction to Functional Programming
+--2.1.3
+
+x div 2 + (x + 1) div 2 = x
+    
+    x = q * 2 + r
+    If x is a multiple of 2, r = 0
+    x + 1 =
+        |q + 1 * 2,     if (x + 1) / 2 = Integer
+        |q * 2 + r + 1, otherwise
+
+For x / 2 = Integer,
+    x = q * 2
+    x + 1 = q * 2 + r + 1
+    
+    q * 2 / 2 + (q * 2 + r + 1 - r - 1) / 2 = x =>
+    q + q = x
+    2q = x
+    
+For x / 2 <> Integer,
+    x = q * 2 + 1
+    x + 1 = q + 1 * 2
+    
+    (q * 2 + 1 - 1) / 2 + (q + 1 * 2) / 2 = x
+    q + q + 1 = x
+    q * 2 + 1 = x
+    
+--
+
+(x * y) div y = x
+    
+    (x * y) / y = x
+    x = x
+    There is no remainder, because since we divide a multiple of y by y, the result will be a integer.
+    
+--
+
+(x div y) div z = x div (y * z)
+
+    The div process is similar to / but only returns integer values. Therefore x / y / z = x / (y * z), and (x div y) div z = x div (y * z).

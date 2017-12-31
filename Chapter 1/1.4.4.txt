@@ -1,0 +1,10 @@
+-- Exercises from Introduction to Functional Programming
+--1.4.4
+    one x = 1
+    a -> Num
+    
+    apply f x = f x
+    (a -> b) -> a -> b
+    
+    compose f g x = f (g (x))
+    (a -> b) -> (b -> c) -> a -> c
