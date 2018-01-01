@@ -1,0 +1,4 @@
+-- Exercise from Introduction to Functional Programming
+--2.3.3
+
+MacMillan < Macmillan < McMillan
