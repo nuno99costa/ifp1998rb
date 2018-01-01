@@ -1,0 +1,11 @@
+-- Exercise from Introduction to Functional Programming
+--2.3.4
+
+show(show 42)
+    ""42""
+
+show 42 ++ show 42
+    "4242"
+
+show chr 10
+    "\n"
