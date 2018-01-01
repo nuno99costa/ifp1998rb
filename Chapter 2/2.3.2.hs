@@ -1,5 +1,5 @@
 -- Exercise from Introduction to Functional Programming
---2.3.1
+--2.3.2
 
 --Solution that accepts float point numbers
 digitval :: String -> Float
