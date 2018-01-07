@@ -1,0 +1,7 @@
+-- Exercise from Introduction to Functional Programming
+--2.4.2.part1
+
+Show that y and z are uniquely determined by the conditions set.
+From condition 2: [x = y + 10 z] we can determine that z is the tens and up digit (since 10 * z, whatever x is, z can cover it's ten and up digits).
+From condition 1: [abs(y) <= 5] we can determine that y has a range of -5 to 5, which means that its used to determine the ones digit: from 0 to 9 (when the ones digit is bigger that 5, we must add 1 to z and equal y to -4)
+Therefore, there is no overlap between either condition, and they define parts of x independently, therefore they are uniquely determined, and no other (y,z) can be made to create the same x;
