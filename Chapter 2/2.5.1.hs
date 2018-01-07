@@ -4,14 +4,12 @@
 --Instead of using ∨ and ∧, I'll use 'and' and 'or' for the function's name
 
 and' :: Bool -> Bool -> Bool
-and' x y
-    | y == True = x
-    | y == False = False
+and' x True = x
+and' x False = False
  
 or' :: Bool -> Bool -> Bool
-or' x y
-    | y == True = True
-    | y == False = x
+or' x True = True
+or' x False = x
     
 and'' :: Bool -> Bool -> Bool
 and'' x y
