@@ -1,0 +1,12 @@
+-- Exercise from Introduction to Functional Programming
+--2.5.2
+
+The two definitions of pred are equivalent.
+
+Both have the first line:
+    pred 0 = 0
+    pred n = 0, if n = 0 => pred 0 = 0
+
+They also share the same process of pattern matching:
+    pred (n + 1) = n => pred n = n - 1
+    pred n = n - 1, if n > 0 (n > 0 is there just so this pattern doesn't match with n = 0)
